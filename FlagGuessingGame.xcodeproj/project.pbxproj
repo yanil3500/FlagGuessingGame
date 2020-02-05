@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD22493323EB7B31008E760D /* countries.txt in Resources */ = {isa = PBXBuildFile; fileRef = CD22493223EB7B31008E760D /* countries.txt */; };
 		CD5B049A23EB542800DE153F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5B049923EB542800DE153F /* AppDelegate.swift */; };
 		CD5B049C23EB542800DE153F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5B049B23EB542800DE153F /* SceneDelegate.swift */; };
 		CD5B049E23EB542800DE153F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5B049D23EB542800DE153F /* ContentView.swift */; };
 		CD5B04A023EB542900DE153F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5B049F23EB542900DE153F /* Assets.xcassets */; };
 		CD5B04A323EB542900DE153F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5B04A223EB542900DE153F /* Preview Assets.xcassets */; };
 		CD5B04A623EB542900DE153F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5B04A423EB542900DE153F /* LaunchScreen.storyboard */; };
+		CD5B04AE23EB5B5600DE153F /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5B04AD23EB5B5600DE153F /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD22493223EB7B31008E760D /* countries.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = countries.txt; sourceTree = "<group>"; };
 		CD5B049623EB542800DE153F /* FlagGuessingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlagGuessingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5B049923EB542800DE153F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD5B049B23EB542800DE153F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		CD5B04A223EB542900DE153F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD5B04A523EB542900DE153F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD5B04A723EB542900DE153F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5B04AD23EB5B5600DE153F /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD5AC58823EB78410049F634 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B049F23EB542900DE153F /* Assets.xcassets */,
+				CD5B04A423EB542900DE153F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD5AC58923EB786A0049F634 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B049923EB542800DE153F /* AppDelegate.swift */,
+				CD5B049B23EB542800DE153F /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD5AC58A23EB78D60049F634 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B04AD23EB5B5600DE153F /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CD5B048D23EB542800DE153F = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +86,11 @@
 		CD5B049823EB542800DE153F /* FlagGuessingGame */ = {
 			isa = PBXGroup;
 			children = (
-				CD5B049923EB542800DE153F /* AppDelegate.swift */,
-				CD5B049B23EB542800DE153F /* SceneDelegate.swift */,
+				CD22493223EB7B31008E760D /* countries.txt */,
 				CD5B049D23EB542800DE153F /* ContentView.swift */,
-				CD5B049F23EB542900DE153F /* Assets.xcassets */,
-				CD5B04A423EB542900DE153F /* LaunchScreen.storyboard */,
+				CD5AC58A23EB78D60049F634 /* Model */,
+				CD5AC58823EB78410049F634 /* View */,
+				CD5AC58923EB786A0049F634 /* Controller */,
 				CD5B04A723EB542900DE153F /* Info.plist */,
 				CD5B04A123EB542900DE153F /* Preview Content */,
 			);
@@ -136,6 +166,7 @@
 				CD5B04A623EB542900DE153F /* LaunchScreen.storyboard in Resources */,
 				CD5B04A323EB542900DE153F /* Preview Assets.xcassets in Resources */,
 				CD5B04A023EB542900DE153F /* Assets.xcassets in Resources */,
+				CD22493323EB7B31008E760D /* countries.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5B04AE23EB5B5600DE153F /* Country.swift in Sources */,
 				CD5B049A23EB542800DE153F /* AppDelegate.swift in Sources */,
 				CD5B049C23EB542800DE153F /* SceneDelegate.swift in Sources */,
 				CD5B049E23EB542800DE153F /* ContentView.swift in Sources */,
